@@ -9,9 +9,11 @@ Simple integration with Twitter services in order to perform CRUD operations.
     git update-index --skip-worktree server/config/twitter-config.js
     ```
 2. Install NPM if not already done: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-3. Install the dependencies 
+3. Install top level dependencies
+    `npm install`
+4. Install the child dependencies 
     `npm run install`
-4. Start both the client app and the server 
+5. Start both the client app and the server 
     `npm run dev`
 
  
