@@ -1,0 +1,29 @@
+{
+  "name": "twitterserviceintegration",
+  "version": "1.0.0",
+  "description": "Simple integration with Twitter services in order to perform CRUD operations.",
+  "main": "index.js",
+  "dependencies": {
+    "yarn": "^1.22.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "scripts": {
+    "install": "cd app; yarn install; cd ../server; yarn install",
+    "server": "cd server; npm start",
+    "client": "cd app; npm start",
+    "dev": "concurrently -n server,client -c magenta,blue \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J2S2-Enterprise-Project-Group/TwitterServiceIntegration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J2S2-Enterprise-Project-Group/TwitterServiceIntegration/issues"
+  },
+  "homepage": "https://github.com/J2S2-Enterprise-Project-Group/TwitterServiceIntegration#readme"
+}
