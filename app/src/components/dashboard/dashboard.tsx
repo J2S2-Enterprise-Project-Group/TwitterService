@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import { TweetListItem } from '../tweet-list-item/tweet-list-item';
 import Container from '@material-ui/core/Container';
 import List from '@material-ui/core/List';
