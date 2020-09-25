@@ -1,0 +1,6 @@
+**/node_modules/
+
+# Do not check in API credentials
+server/config/twitter-config.js
+
+**/yarn-error.log
