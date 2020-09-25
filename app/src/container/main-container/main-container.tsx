@@ -1,5 +1,6 @@
 import React from "react";
 import { HeaderBar } from "../../components/header/header-bar";
+import { Dashboard } from "../../components/dashboard/dashboard";
 
 interface IMainContainer {
 
@@ -7,6 +8,9 @@ interface IMainContainer {
 
 export const MainContainer: React.FC<IMainContainer> = ({ }) => {
     return (
-        <HeaderBar />
+        <div>
+            <HeaderBar />
+            <Dashboard />
+        </div>
     );
 }
