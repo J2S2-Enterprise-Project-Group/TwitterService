@@ -5,7 +5,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { MainContainer } from './container/main-container/main-container';
+import { AppContainer } from './container/app-container/app-container';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/">
-            <MainContainer />
+            <AppContainer />
           </Route>
         </Switch>
       </Router>

@@ -25,10 +25,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/', listTweetsRouter);
-app.use('/create', createTweetRouter);
-app.use('/retrieve', retrieveTweetRouter);
-app.use('/delete', deleteTweetRouter);
+app.use('/api/', listTweetsRouter);
+app.use('/api/create', createTweetRouter);
+app.use('/api/retrieve', retrieveTweetRouter);
+app.use('/api/delete', deleteTweetRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
