@@ -3,7 +3,7 @@
  */
 export const API_URL = {
 	CREATE_TWEET: '/api/create',
-	DELETE_TWEET: '',
+	DELETE_TWEET: '/api/delete',
 	UPDATE_TWEETS: '',
 	LIST_TWEETS: '/api/'
 }
