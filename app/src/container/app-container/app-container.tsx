@@ -2,7 +2,7 @@
  * @author Shiv Kumar Ganesh <shivkumar.ganesh@sjsu.edu> 
  * @author Shannon Phu <shannon.phu@sjsu.edu>
  */
-import { Button, Container, Grid, Typography } from "@material-ui/core";
+import { Button, Container, Grid, List, Typography, useEventCallback } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useCallback } from "react";
@@ -10,6 +10,9 @@ import { Dashboard } from "../../components/dashboard/dashboard";
 import { HeaderBar } from "../../components/header/header-bar";
 import { API_URL } from "../../config/api-config";
 import { TwitterTextbox } from "../../components/twitter-textbox/twitter-textbox";
+import { idText } from "typescript";
+import { TweetListItem } from "../../components/tweet-list-item/tweet-list-item";
+import { keys } from "@material-ui/core/styles/createBreakpoints";
 
 interface IAppContainer {
 
@@ -25,6 +28,18 @@ export const AppContainer: React.FC<IAppContainer> = () => {
 	const [tweets, setTweets] = useState<Tweets[]>([] as any); // List of tweets to be displayed
 	const [tweetText, setTweetText] = useState(''); // Text in the textbox that will be tweeted
 
+	/**
+	 * This function handles removing of the tweets.
+	 *  @author Jagruti Mohanty<jagruti.mohanty@sjsu.edu> 
+	 *  @author  Jocelyn Baduria<jocelyn.baduria@sjsu.edu>
+	 */
+	const handleTweetDelete = useCallback(async (id: string) => {
+		await axios.post(API_URL.DELETE_TWEET, { id }).then((response) => {
+			// See API response here
+			getListOfTweets();
+			setTweetText('')
+		});
+	}, []);
 
 	/**
 	 * This function handles fetching of the tweets.
@@ -59,6 +74,7 @@ export const AppContainer: React.FC<IAppContainer> = () => {
 		});
 	}, [tweetText, getListOfTweets]);
 
+
 	return (
 		<>
 			<HeaderBar />
@@ -81,7 +97,7 @@ export const AppContainer: React.FC<IAppContainer> = () => {
 						alignItems="flex-start"></Grid>
 					<Typography variant="body1">My Tweets</Typography>
 					<br />
-					<Dashboard tweets={tweets}></Dashboard>
+					<Dashboard tweets={tweets} handleTweetDelete={handleTweetDelete}></Dashboard>
 				</Grid>
 			</Container>
 		</>
