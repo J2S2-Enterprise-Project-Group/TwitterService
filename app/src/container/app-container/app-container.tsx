@@ -1,5 +1,5 @@
 /**
- * @author Shiv Kumar Ganesh <shivkumar.ganesh@sjsu.edu> 
+ * @author Shiv Kumar Ganesh <shivkumar.ganesh@sjsu.edu>
  * @author Shannon Phu <shannon.phu@sjsu.edu>
  */
 import { Button, Container, Grid, List, Typography, useEventCallback } from "@material-ui/core";
@@ -29,8 +29,8 @@ export const AppContainer: React.FC<IAppContainer> = () => {
 	const [tweetText, setTweetText] = useState(''); // Text in the textbox that will be tweeted
 
 	/**
-	 * This function handles removing of the tweets.
-	 *  @author Jagruti Mohanty<jagruti.mohanty@sjsu.edu> 
+	 * This function handles removing of the tweets. This function deletes for each ID
+	 *  @author Jagruti Mohanty<jagruti.mohanty@sjsu.edu>
 	 *  @author  Jocelyn Baduria<jocelyn.baduria@sjsu.edu>
 	 */
 	const handleTweetDelete = useCallback(async (id: string) => {

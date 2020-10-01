@@ -18,7 +18,8 @@ interface TweetListItemProps {
 
 export const TweetListItem: React.FC<TweetListItemProps> = ({ text = '', id = '', deleteFn }) => {
     /**
-    *  @author Jagruti Mohanty<jagruti.mohanty@sjsu.edu> 
+    * Updated the delete item
+    *  @author Jagruti Mohanty<jagruti.mohanty@sjsu.edu>
     *  @author  Jocelyn Baduria<jocelyn.baduria@sjsu.edu>
     */
     const handleClick = useCallback((id) => {
