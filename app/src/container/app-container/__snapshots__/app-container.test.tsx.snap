@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Container Component Check if the component loaded 1`] = `
+<Fragment>
+  <Component />
+  <WithStyles(ForwardRef(Container))
+    maxWidth="sm"
+  >
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      spacing={1}
+      style={
+        Object {
+          "marginTop": "30px",
+        }
+      }
+    >
+      <WithStyles(ForwardRef(Grid))
+        alignItems="flex-end"
+        container={true}
+        direction="column"
+        item={true}
+        justify="flex-end"
+        xs={12}
+      >
+        <Component
+          onBlur={[Function]}
+        />
+        <div
+          style={
+            Object {
+              "marginTop": "10px",
+            }
+          }
+        >
+          <WithStyles(ForwardRef(Button))
+            color="primary"
+            onClick={[Function]}
+            variant="contained"
+          >
+            Tweet
+          </WithStyles(ForwardRef(Button))>
+        </div>
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        alignItems="flex-start"
+        container={true}
+        direction="column"
+        item={true}
+        justify="flex-start"
+        xs={10}
+      />
+      <WithStyles(ForwardRef(Typography))
+        variant="body1"
+      >
+        My Tweets
+      </WithStyles(ForwardRef(Typography))>
+      <br />
+      <Component
+        handleTweetDelete={[Function]}
+        tweets={Array []}
+      />
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Container))>
+</Fragment>
+`;

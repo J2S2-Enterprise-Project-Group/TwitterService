@@ -6,7 +6,7 @@ import { TweetListItem } from '../tweet-list-item/tweet-list-item';
 import List from '@material-ui/core/List';
 import { Divider } from "@material-ui/core";
 
-interface Tweets {
+export interface Tweets {
 	id_str: string,
 	text: string,
 }
