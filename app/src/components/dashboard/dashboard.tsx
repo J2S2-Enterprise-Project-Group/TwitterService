@@ -16,8 +16,8 @@ export interface DashboardProps {
 }
 
 export const Dashboard: React.FC<DashboardProps> = ({ tweets, handleTweetDelete }): JSX.Element => {
-	/**
-	 *  @author Jagruti Mohanty<jagruti.mohanty@sjsu.edu> 
+	/** Updated the dashboard for the delele function
+	 *  @author Jagruti Mohanty<jagruti.mohanty@sjsu.edu>
 	 *  @author  Jocelyn Baduria<jocelyn.baduria@sjsu.edu>
 	 */
 	const handleDeleteFn = useCallback((id: string) => {
