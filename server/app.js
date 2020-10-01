@@ -8,8 +8,6 @@ var router = express.Router();
 module.exports = router;
 
 var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
 var logger = require('morgan');
 var cors = require('cors');
 
