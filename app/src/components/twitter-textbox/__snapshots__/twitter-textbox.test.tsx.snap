@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Twitter TextBox Check if the component loaded 1`] = `
+<Fragment>
+  <ForwardRef(TextareaAutosize)
+    aria-label="Whats Happening"
+    maxLength={140}
+    onBlur={[MockFunction]}
+    placeholder="Whats Happening"
+    rowsMin="5"
+    style={
+      Object {
+        "fontFamily": "Roboto",
+        "fontSize": "14px",
+        "padding": "10px",
+        "width": "95%",
+      }
+    }
+  />
+</Fragment>
+`;

@@ -14,9 +14,9 @@ const TwitterAccount = require('../auth/account');
 	 *  @author  Jocelyn Baduria<jocelyn.baduria@sjsu.edu>
 	 */
 router.post('/', function (req, res, next) {
-  Twitter.post('statuses/destroy/:id', req.body, function (err, data, response) {
-    res.json(response);
-  });
+	Twitter.post('statuses/destroy/:id', req.body, function (err, data, response) {
+		res.json(response);
+	});
 });
 
 module.exports = router;
